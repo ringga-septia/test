@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@color/btnKuning">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/im_gambar"
+            android:layout_width="86dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_scan"/>
+
+        <TextView
+            android:id="@+id/tv_klas"
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:text="Kelas" />
+
+        <TextView
+            android:text="tanggal"
+            android:layout_below="@+id/tv_klas"
+            android:id="@+id/tv_tgl"
+            android:layout_width="284dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="jam"
+            android:layout_below="@+id/tv_tgl"
+            android:id="@+id/tv_jam"
+            android:layout_width="284dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="keterangan"
+            android:layout_below="@id/tv_jam"
+            android:id="@+id/tv_keterangan"
+            android:layout_width="284dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
